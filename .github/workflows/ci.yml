@@ -2,6 +2,10 @@ name: Build and test
 
 on:
   push:
+    paths-ignore:
+      - '**.md'
+      - '**.yml'
+      - '**.yaml'
 
 jobs:
   build-and-test:
