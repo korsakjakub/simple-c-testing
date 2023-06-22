@@ -1,9 +1,10 @@
 flags = -Wall -Wextra
 test_obj := $(filter-out main.c, $(wildcard *.c))
+build_obj := $(filter-out test.c, $(wildcard *.c))
 
 build:
 	@mkdir -p bin
-	@gcc $(flags) main.c -o bin/cproj
+	@gcc $(flags) $(build_obj) -o bin/cproj
 
 run: build
 	@./bin/cproj
