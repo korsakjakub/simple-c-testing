@@ -11,4 +11,4 @@ run: build
 test:
 	@mkdir -p bin
 	@gcc $(flags) $(test_obj) -o bin/cproj_test 
-	@./bin/cproj_test
+	./bin/cproj_test
