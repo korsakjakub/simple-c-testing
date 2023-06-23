@@ -1,6 +1,4 @@
 #include "test_arithmetic.h"
-#include <stdio.h>
-#include "string.h"
 
 void run(bool (*func)(char error[]), char name[], int *passed, int *failed) {
     printf("Testing: %s\n", name);
